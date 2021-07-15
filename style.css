@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+position: relative;
+width: 500px;
+height: 500px;
+margin: 10% 30%;
+border: 2px solid white;
+
+}
+
+h1{
+position: absolute;
+left: 35%;
+top: 40%;
+font-size: 5rem;
+}
+
+.container>div{
+    position: absolute;
+    width: 248px;
+    height: 248px;
+    opacity: 0.2;
+
+}
+
+.red{
+background-color: red;
+top: 0%;
+left: 0%;
+transform-origin: top left;
+}
+
+.yellow{
+    background-color: yellow;
+    right: 0%;
+    top: 0%;
+    transform-origin: top right;
+}
+
+.blue{ background-color: blue; 
+    left: 0%; 
+    bottom: 0%; 
+    transform-origin: bottom left;
+
+}
+
+.green{
+    background-color: green;
+    bottom: 0%;
+    right: 0%;
+    transform-origin: bottom right;
+}
+
+/* Animation */
+.container>div{
+    transition: transform 2s ease-in-out;
+    -webkit-transition: transform 2s ease-in-out;
+    -moz-transition: transform 2s ease-in-out;
+    -ms-transition: transform 2s ease-in-out;
+    -o-transition: transform 2s ease-in-out;
+
+}
+
+.container:hover .red{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform-origin: top left;
+    
+}
+
+.container:hover .yellow {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.container:hover .blue{
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.container:hover .green{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
